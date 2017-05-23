@@ -1,26 +1,17 @@
-# ember-jwt-decode-shim
+# JWTDecode Shim
 
-This README outlines the details of collaborating on this Ember addon.
+This addon makes [jwt-decode](https://www.npmjs.com/package/jwt-decode) available as an ES6 module.
 
 ## Installation
+`ember install ember-jwt-decode-shim`
 
-* `git clone <repository-url>` this repository
-* `cd ember-jwt-decode-shim`
-* `npm install`
+## Usage
 
-## Running
+```javascript
+import jwtDecode from 'jwt-decode';
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmb28iOiJiYXIiLCJleHAiOjEzOTMyODY4OTMsImlhdCI6MTM5MzI2ODg5M30.4-iaDojEVl0pJQMjrbM1EzUIfAZgsbK_kgnVyVxFSVo';
 
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+const decoded = jwtDecode(token);
+console.log(decoded.exp); //1393286893
+```

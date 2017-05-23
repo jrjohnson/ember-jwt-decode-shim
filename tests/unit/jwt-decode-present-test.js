@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
 import jwtDecode from 'jwt-decode';
 
-module('cryptojs as an ES6 module');
+module('jwtDecode as an ES6 module');
 
 test('it has been imported', function(assert) {
   assert.ok(jwtDecode);
