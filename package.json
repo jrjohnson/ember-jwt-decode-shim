@@ -1,24 +1,29 @@
 {
   "name": "ember-jwt-decode-shim",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Shim for accessing the jwt-decode library.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "jwt",
+    "jwt-decode"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Jonathan Johnson",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/jrjohnson/ember-jwt-decode-shim",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.0.0"
+    "broccoli-funnel": "^1.1.0",
+    "broccoli-merge-trees": "^2.0.0",
+    "ember-cli-babel": "^6.0.0",
+    "jwt-decode": "^2.2.0"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -38,7 +43,6 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.13.0",
-    "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
