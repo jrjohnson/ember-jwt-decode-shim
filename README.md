@@ -1,5 +1,7 @@
 # JWTDecode Shim
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-jwt-decode-shim.svg)](https://greenkeeper.io/)
+
 This addon makes [jwt-decode](https://www.npmjs.com/package/jwt-decode) available as an ES6 module.
 
 ## Installation
