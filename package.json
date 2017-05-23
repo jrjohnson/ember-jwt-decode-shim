@@ -1,6 +1,6 @@
 {
   "name": "ember-jwt-decode-shim",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Shim for accessing the jwt-decode library.",
   "keywords": [
     "ember-addon",
